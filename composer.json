@@ -1,0 +1,43 @@
+{
+    "name": "chesszebra/coding-standards",
+    "type": "phpcodesniffer-standard",
+    "description": "The ChessZebra coding standards for PHP_CodeSniffer.",
+    "keywords": [
+        "coding-standards",
+        "coding",
+        "standard",
+        "standards",
+        "cs",
+        "code",
+        "style",
+        "sniffer",
+        "rules",
+        "sniffs",
+        "checks",
+        "chesszebra"
+    ],
+    "homepage": "https://chesszebra.com",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "doctrine/coding-standard": "^7.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload-dev": {
+        "classmap": [
+            "ChessZebra/"
+        ],
+        "psr-4": {
+            "ChessZebra\\SniffsTest\\": "tests/SniffsTest"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "config": {
+        "optimize-autoloader": true,
+        "process-timeout": 5000,
+        "sort-packages": true
+    }
+}
